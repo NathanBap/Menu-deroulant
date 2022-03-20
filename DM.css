@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(156, 156, 156);
+}
+
+h1 {
+    color: rgb(0, 129, 129);
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 0%;
+}
+
+.menu {
+    position: absolute;
+    border-right: 1px solid black;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+
+.menu li {
+    padding: 5px;
+    padding-right: 20px;
+    list-style: none;
+}
+
+.menu li:hover {
+    background-color: darksalmon;
+    cursor: pointer;
+}
+
+li:hover .sous-menu{
+    display: block;
+}
+
+.sous-menu {
+    position: absolute;
+    display: none;
+    padding-left: 0px;
+    top: 0px;
+    left: 98.5px;
+}
+
+.sous-menu li:hover {
+    background-color: blanchedalmond;
+}
+
+.parent {
+    position: relative;
+}
+
+.poeme {
+    position: absolute;
+    left: 150px;
+    margin: 10px 500px 0px 120px;
+    border: 1px dashed blue;
+    padding: 0px 5px 0px 5px;
+}
