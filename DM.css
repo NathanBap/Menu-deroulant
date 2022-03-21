@@ -9,14 +9,19 @@ h1 {
     margin-bottom: 0%;
 }
 
+ul {
+    width: 100px;
+}
+
 .menu {
     position: absolute;
     border-right: 1px solid black;
-    padding-left: 0px;
-    margin-top: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 .menu li {
+    position: relative;
     padding: 5px;
     padding-right: 20px;
     list-style: none;
@@ -27,7 +32,11 @@ h1 {
     cursor: pointer;
 }
 
-li:hover .sous-menu{
+.menu li:hover .sous-menu{
+    display: block;
+}
+
+.sous-menu li:hover .sous-sous-menu {
     display: block;
 }
 
@@ -36,21 +45,29 @@ li:hover .sous-menu{
     display: none;
     padding-left: 0px;
     top: 0px;
-    left: 98.5px;
+    left: 101px;
 }
 
 .sous-menu li:hover {
-    background-color: blanchedalmond;
+    background-color: rgb(240, 202, 145);
 }
 
-.parent {
-    position: relative;
+.sous-sous-menu {
+    position: absolute;
+    display: none;
+    padding-left: 0px;
+    top: 0px;
+    left: 100px;
+}
+
+.sous-sous-menu li:hover {
+    background-color: rgb(243, 243, 184);
 }
 
 .poeme {
-    position: absolute;
     left: 150px;
-    margin: 10px 500px 0px 120px;
+    margin: 10px 500px 0px 300px;
     border: 1px dashed blue;
     padding: 0px 5px 0px 5px;
 }
+
